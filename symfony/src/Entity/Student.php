@@ -16,7 +16,10 @@ use Symfony\Component\Validator\Constraints as Assert;
  *         "put",
  *         "patch",
  *         "delete",
- *         "get_student_grade_average": {"route_name": "student_grade_average"}
+ *         "get_student_grade_average": {
+ *             "route_name": "student_grade_average",
+ *             "swagger_context"={"parameters"={}}
+ *         }
  *     },
  *     collectionOperations={"get", "post"}
  * )

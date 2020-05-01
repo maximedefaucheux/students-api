@@ -12,7 +12,7 @@ class GradeController extends AbstractController
     /**
      * @Route(
      *     name="class_grade_average",
-     *     path="/class-grade-average",
+     *     path="/api/class-grade-average",
      *     methods={"GET"},
      *     defaults={"_api_item_operation_name"="get_class_grade_average"}
      * )
