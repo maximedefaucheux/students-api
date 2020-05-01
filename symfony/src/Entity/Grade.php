@@ -22,6 +22,8 @@ use Symfony\Component\Validator\Constraints as Assert;
 class Grade
 {
     /**
+     * @var int
+     *
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
@@ -35,6 +37,8 @@ class Grade
     private $student;
 
     /**
+     * @var int
+     *
      * @ORM\Column(type="integer")
      * @Assert\Type("integer")
      * @Assert\Range(min=0, max=20)
@@ -42,6 +46,8 @@ class Grade
     private $value;
 
     /**
+     * @var string
+     *
      * @ORM\Column(type="string", length=255)
      * @Assert\Type("string")
      * @Assert\NotBlank()

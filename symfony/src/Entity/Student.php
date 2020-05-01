@@ -24,6 +24,8 @@ use Symfony\Component\Validator\Constraints as Assert;
 class Student
 {
     /**
+     * @var int
+     *
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
@@ -31,6 +33,8 @@ class Student
     private $id;
 
     /**
+     * @var string
+     *
      * @ORM\Column(type="string", length=255)
      * @Assert\Type("string")
      * @Assert\NotBlank()
@@ -39,6 +43,8 @@ class Student
     private $firstName;
 
     /**
+     * @var string
+     *
      * @ORM\Column(type="string", length=255)
      * @Assert\Type("string")
      * @Assert\NotBlank()
@@ -47,7 +53,11 @@ class Student
     private $lastName;
 
     /**
+     * @var \DateTime
+     *
      * @ORM\Column(type="date")
+     * @Assert\Type("\DateTimeInterface")
+     * @Assert\NotNull()
      */
     private $birthDate;
 
